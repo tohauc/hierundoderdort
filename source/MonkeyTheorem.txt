@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Buch</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	background-color:rgb(255,215,0,0.2);
+}
+
+/* Style the header */
+header {
+    background-color: MediumSeaGreen;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: rgb(255,215,0,0.2);
+    padding: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+<h1>Moin!</h1>
+<blockquote cite="https://www.carlrogers.de">
+"Empathisch zu sein, bedeutet, die Welt durch die Augen der anderen zu sehen und nicht unsere Welt in ihren Augen (Carl Rogers)."
+</blockquote>
+<header>
+  <img  src="web.jpg" alt="Web" width="50" height="60" align="left">
+  <ul style="list-style-type:disc" align="right">
+  <li>deutsch</li>
+  <li>englisch</li>
+  <!-- Übersetzung -->
+</ul>
+</header>
+<!-- This is a comment -->
+<section>
+  <nav>
+    <ul>
+      <li><a href="#HelloWorld.html">Home</a></li>
+	  <li><a href="#">Doku</a></li>
+	  <li><a href="In-Der-Welt-Sein.html">Artikel</a></li>
+      <li><a href="#">Stopuhr</a></li>
+      <li><a href="#">Spiele</a></li>
+	  <li><a href="#">Websuche</a></li>
+      <li><a href="#">Musik</a></li>
+    </ul>
+  </nav>
+  <!-- This is a comment too-->
+  <article>
+
+	<p><a href="#C4">Jump to Chapter 4</a></p>
+
+	<h2>Chapter 1</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 2</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 3</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2 id="C4">Chapter 4</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 5</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 6</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 7</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 8</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 9</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 10</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 11</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 12</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 13</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 14</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 15</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 16</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 17</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 18</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 19</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 20</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 21</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 22</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>Chapter 23</h2>
+	<p>This chapter explains ba bla bla</p>
+  </article>
+</section>
+<!-- why? -->
+<footer>
+  <p>Und Tsch&uumlss</p>
+  <ul style="list-style-type:square">
+  <li>Beweise</li>
+  <li>Techniken</li>
+  <li>alg</li>
+</ul>
+</footer>
+</body>
+</html>

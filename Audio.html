@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Video</title>
+<style>
+body {
+  color: ;
+}
+
+h1 {
+  color: DarkGray;
+}
+#myDIV {
+    width: 100px;
+    height: 100px;
+    background-color: MediumSeaGreen;
+    color: white;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    50% {box-shadow: 10px 20px 30px Coral;}
+}
+
+@keyframes mymove {
+    50% {box-shadow: 10px 20px 30px Coral;}
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	background-color:rgb(255,215,0,0.2);
+}
+
+/* Style the header */
+header {
+    background-color: MediumSeaGreen;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Style the top Navi*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: rgb(255,215,0,0.2);
+    padding: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+<div  style="float:right; align="right">
+  <svg id="myDIV" width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="2" fill='#fff1a3' />
+</svg></div>
+<h1>Moin!</h1>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+</header>
+<section>
+  <nav>
+    <ul style="list-style-type:square">
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="InDerWeltSein.html">In-Der-Welt-Sein</a></li>
+	  <li><a href="Gustino.html">Gustino</a></li>
+      <li><a href="Stopuhr.html">Stoppuhr</a></li>
+      <li><a href="Spiele.html">Spiele</a></li>
+	  <li><a href="Websuche.html">Websuche</a></li>
+      <li><a href="Audio.html">Audio</a></li>
+	  <li><a href="Video.html">Video</a></li>
+	  <li><a href="Pixel.html">Pixel</a></li>
+	  <li><a href="Med.html">Gesundheit</a></li>
+	  <li><a href="Sicher.html">Datenschutz/Sicherheit</a></li>
+	  <li><a href="Impression.html">Impression</a></li>
+	  <li><a href="Links.html">Links</a></li>
+    </ul>
+	<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:tomato;stroke:black;stroke-width:5;opacity:0.5" />
+</svg>
+<hr>
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/207977497&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+  </nav>
+  <!-- This is a comment too-->
+  <article>
+  <blockquote cite="http://zitate.net/zitat?id=1046">
+"Das H&oumlren ist der Ursprung der vern&uumlnftigen Seele, und die Vernunft spricht mit dem Klang, und der Klang ist gleichsam Denken, und das Wort ist gleichsam Werk (Hildegard von Bingen)."
+</blockquote>
+    <h2 style="text-align:center;">Audio</h2>
+	<h3 style="text-align:center;">Ode an die Freude<h3>
+    <p style="text-align:center;">
+		<audio controls>
+		<source src="./media/odetojoy.ogg" type="audio/ogg">
+		<source src="./media/odetojoy.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.</audio>
+	</p>
+	<hr>
+	<details><summary>
+	<h2 style="font-family:verdana;">Lyrik: Ode an die Freude</h2>
+	</summary>
+	<h3>Strophe 1</h3>
+	<p><pre>Freude, schöner Götterfunken
+Tochter aus Elysium,
+Wir betreten feuertrunken,
+Himmlische, dein Heiligtum!
+Deine Zauber binden wieder
+Was die Mode streng geteilt;
+Alle Menschen werden Brüder,
+Wo dein sanfter Flügel weilt.</pre></p>
+
+	<h3>Strophe 2</h3>
+	<p><pre>Wem der große Wurf gelungen,
+Eines Freundes Freund zu sein;
+Wer ein holdes Weib errungen,
+Mische seinen Jubel ein!
+Ja, wer auch nur eine Seele
+Sein nennt auf dem Erdenrund!
+Und wer's nie gekonnt, der stehle
+Weinend sich aus diesem Bund!</pre></p>
+
+	<h3>Strophe 3</h3>
+	<p><pre>Freude trinken alle Wesen
+An den Brüsten der Natur;
+Alle Guten, alle Bösen
+Folgen ihrer Rosenspur.
+Küße gab sie uns und Reben,
+Einen Freund, geprüft im Tod;
+Wollust ward dem Wurm gegeben,
+Und der Cherub steht vor Gott.</pre></p>
+
+	<h3>Strophe 4</h3>
+	<p><pre>Froh, wie seine Sonnen fliegen
+Durch des Himmels prächt'gen Plan,
+Laufet, Brüder, eure Bahn,
+Freudig, wie ein Held zum Siegen.</pre></p>
+
+	<h3>Strophe 5</h3>
+	<p><pre>Seid umschlungen, Millionen!
+Diesen Kuß der ganzen Welt!
+Brüder, über'm Sternenzelt
+Muß ein lieber Vater wohnen.
+Ihr stürzt nieder, Millionen?
+Ahnest du den Schöpfer, Welt?
+Such' ihn über'm Sternenzelt!
+Über Sternen muß er wohnen.</pre></p>
+
+	<h3>Strophe 6</h3>
+	<p><pre>Seid umschlungen, Millionen!
+Diesen Kuß der ganzen Welt!
+Brüder, über'm Sternenzelt
+Muß ein lieber Vater wohnen.
+Seid umschlungen,
+Diesen Kuß der ganzen Welt!
+Freude, schöner Götterfunken
+Tochter aus Elysium,
+Freude, schöner Götterfunken.</pre></p>
+</details>
+	<a href="./source/OdeAnDieFreude.pdf">Lyrik als PDF</a>
+	<div align="right">
+<svg width="25" height="25" ><polygon points="12.5,1.25 5,24.75 23.75,9.75 1.25,9.75 20,24.75" style="fill:black ;stroke:gray;stroke-width:1.25;fill-rule:evenodd;" />
+</svg>
+</div>
+	<hr>
+	<h3 style="text-align:center;">Für Elise<h3>
+	<p style="text-align:center;">
+		<audio controls>
+		<source src="./media/fuerElise.ogg" type="audio/ogg">
+		<source src="./media/fuerElise.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.</audio>
+	</p>
+	</p>
+	<hr>
+	<p>
+	Soundcloud <!--my jazz-->
+	</p>
+	<!-- hush little baby mockingbird--><!-- soundcloud: Klavier wo ist es?-->
+	<hr>
+	<p title="siehe Tastatur"> Speichern Sie das Dokument durch Drücken von <kbd>Ctrl + S</kbd> oder <button>klick mich!</button></p>
+  </article>
+</section>
+<!-- why? -->
+<footer>
+  <p>Beehren Sie uns mal wieder</p>
+</footer>
+</body>
+</html>
